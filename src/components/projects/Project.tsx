@@ -2,6 +2,7 @@ import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import gsap from "gsap";
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
+import { Icon } from "@iconify/react";
 
 const Project = () => {
     const [img1, setImg1] = useState(1);
@@ -137,7 +138,7 @@ const Project = () => {
                 {/* Subscription Tracker */}
                 <Grid id="project" size={{ xs: 12, md: 6 }}>
                     <motion.div variants={projectVariants}>
-                        <Typography variant="h5" className="font-semibold mb-3 text-white text-xl md:text-2xl tracking-wide">
+                        <Typography variant="h5" className="!font-semibold mb-3 text-white text-xl md:text-2xl tracking-wide">
                             Subscription Tracker
                         </Typography>
 
@@ -153,6 +154,7 @@ const Project = () => {
                                 <motion.div
                                     whileHover={{ scale: 1.1 }}
                                     whileTap={{ scale: 0.95 }}
+                                    className="flex items-center gap-x-3"
                                 >
                                     <Button
                                         variant="outlined"
@@ -161,7 +163,18 @@ const Project = () => {
                                         style={{ padding: ".5rem 1rem" }}
                                         href="https://subtracking.vercel.app/"
                                     >
-                                        View
+                                        Live
+                                        <Icon icon="iconamoon:arrow-top-right-1-bold" width={20} height={20} />
+                                    </Button>
+                                    <Button
+                                        variant="outlined"
+                                        color="inherit"
+                                        className="!text-xl md:!text-2xl invisible group-hover:visible transition-opacity duration-500 !text-black"
+                                        style={{ padding: ".5rem 1rem" }}
+                                        href="https://github.com/khatri-rohit/subscription_tracker"
+                                    >
+                                        <Icon icon="ri:github-fill" width={25} height={25} className="mb-0.5" />
+                                        <span>Code</span>
                                     </Button>
                                 </motion.div>
                             </Box>
@@ -188,7 +201,7 @@ const Project = () => {
                 {/* Dev Discuss */}
                 <Grid id="project" size={{ xs: 12, md: 6 }}>
                     <motion.div variants={projectVariants}>
-                        <Typography variant="h5" className="font-semibold mb-3 text-white text-xl md:text-2xl tracking-wide">
+                        <Typography variant="h5" className="!font-semibold mb-3 text-white text-xl md:text-2xl tracking-wide">
                             Dev Discuss
                         </Typography>
 
@@ -204,6 +217,7 @@ const Project = () => {
                                 <motion.div
                                     whileHover={{ scale: 1.1 }}
                                     whileTap={{ scale: 0.95 }}
+                                    className="flex items-center gap-x-3"
                                 >
                                     <Button
                                         variant="outlined"
@@ -212,7 +226,18 @@ const Project = () => {
                                         style={{ padding: ".5rem 1rem" }}
                                         href="https://discussdev.vercel.app/"
                                     >
-                                        View
+                                        Live
+                                        <Icon icon="iconamoon:arrow-top-right-1-bold" width={20} height={20} />
+                                    </Button>
+                                    <Button
+                                        variant="outlined"
+                                        color="inherit"
+                                        className="!text-xl md:!text-2xl invisible group-hover:visible transition-opacity duration-500 !text-black"
+                                        style={{ padding: ".5rem 1rem" }}
+                                        href="https://github.com/khatri-rohit/Blog"
+                                    >
+                                        <Icon icon="ri:github-fill" width={25} height={25} className="mb-0.5" />
+                                        <span>Code</span>
                                     </Button>
                                 </motion.div>
                             </Box>
