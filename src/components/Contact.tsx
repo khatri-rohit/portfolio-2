@@ -372,7 +372,7 @@ const Contact = () => {
                             marginBottom: "3rem",
                             textTransform: "uppercase",
                             fontWeight: 800,
-                            letterSpacing: "0.3em",
+                            // letterSpacing: "0.3em",
                             color: COLORS.lightText,
                             // textShadow: `0 0 20px ${COLORS.primary}`,
                             textShadow: "0 2px 4px rgba(0,0,0,0.3)",

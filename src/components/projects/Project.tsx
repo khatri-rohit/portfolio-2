@@ -68,7 +68,6 @@ const Project = () => {
                     trigger: sectionRef.current,
                     start: "top 80%",
                     end: "bottom 50%",
-                    // markers: true,
                     scrub: 1,
                     toggleActions: "play none none reverse"
                 },
@@ -87,6 +86,7 @@ const Project = () => {
                 scrollTrigger: {
                     trigger: project,
                     start: "top bottom",
+                    end: "top center",
                     toggleActions: "play none none reverse"
                 }
             });
@@ -138,7 +138,7 @@ const Project = () => {
                 {/* Subscription Tracker */}
                 <Grid id="project" size={{ xs: 12, md: 6 }}>
                     <motion.div variants={projectVariants}>
-                        <Typography variant="h5" className="!font-semibold mb-3 text-white text-xl md:text-2xl tracking-wide">
+                        <Typography variant="h5" className="!font-semibold mb-3 text-white text-xl md:text-2xl tracking-wider">
                             Subscription Tracker
                         </Typography>
 
@@ -201,7 +201,7 @@ const Project = () => {
                 {/* Dev Discuss */}
                 <Grid id="project" size={{ xs: 12, md: 6 }}>
                     <motion.div variants={projectVariants}>
-                        <Typography variant="h5" className="!font-semibold mb-3 text-white text-xl md:text-2xl tracking-wide">
+                        <Typography variant="h5" className="!font-semibold mb-3 text-white text-xl md:text-2xl tracking-wider">
                             Dev Discuss
                         </Typography>
 

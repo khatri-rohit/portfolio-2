@@ -31,7 +31,7 @@ const TiltCard = ({ icon, skill }: CardProps) => {
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
 
-        const maxRotation = 4;
+        const maxRotation = 5;
         const rotateX = Math.max(-maxRotation, Math.min(maxRotation, -(y - centerY) / 10));
         const rotateY = Math.max(-maxRotation, Math.min(maxRotation, (x - centerX) / 10));
 
@@ -42,7 +42,7 @@ const TiltCard = ({ icon, skill }: CardProps) => {
             transformPerspective: 1000,
             transformOrigin: "center center",
             duration: 0.3,
-            ease: "power2.out"
+            ease: "power1.out"
         });
     };
 
@@ -52,7 +52,7 @@ const TiltCard = ({ icon, skill }: CardProps) => {
                 opacity: 0.8,
                 scale: 1,
                 duration: 0.3,
-                ease: "power2.out",
+                ease: "power1.out",
             });
         }
     };
@@ -67,14 +67,14 @@ const TiltCard = ({ icon, skill }: CardProps) => {
                 rotateY: 0,
                 scale: 1,
                 duration: 0.4,
-                ease: "power2.out",
+                ease: "power1.out",
             });
 
             gsap.to(glow, {
                 opacity: 0,
                 scale: 0.85,
                 duration: 0.3,
-                ease: "power2.in",
+                ease: "power1.in",
             });
         }
     };
