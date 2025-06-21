@@ -38,10 +38,10 @@ const TiltCard = ({ icon, skill }: CardProps) => {
         gsap.to(card, {
             rotateX,
             rotateY,
-            scale: 1.02,
+            scale: 1.05,
             transformPerspective: 1000,
             transformOrigin: "center center",
-            duration: 0.3,
+            duration: 0.15,
             ease: "power1.out"
         });
     };
@@ -51,7 +51,7 @@ const TiltCard = ({ icon, skill }: CardProps) => {
             gsap.to(glowRef.current, {
                 opacity: 0.8,
                 scale: 1,
-                duration: 0.3,
+                duration: 0.15,
                 ease: "power1.out",
             });
         }
@@ -91,7 +91,6 @@ const TiltCard = ({ icon, skill }: CardProps) => {
                     className="relative min-h-44 w-full !rounded-2xl overflow-hidden !flex !items-center !justify-center transform-gpu will-change-transform transition-all duration-500 group"
                     sx={{
                         background: "linear-gradient(to top left, #1d293d, #162236, #18181b 75%)",
-                        transition: "all 500ms",
                         "&:hover": {
                             background: "linear-gradient(to top left, rgba(16, 14, 45, 0.85), rgba(25, 18, 54, 0.9), rgba(8, 5, 23, 0.95))",
                             boxShadow: `

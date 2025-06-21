@@ -23,6 +23,11 @@ const skills = [
         icon: <Icon icon="devicon:typescript" width={70} height={70} />,
     },
     {
+        id: 2,
+        skill: "Next.js",
+        icon: <Icon icon="file-icons:nextjs" width={70} height={70} />,
+    },
+    {
         id: 5,
         skill: "Redux",
         icon: <Icon icon="logos:redux" width={70} height={70} />,
@@ -82,11 +87,7 @@ const skills = [
         skill: "Git",
         icon: <Icon icon="logos:git-icon" width={70} height={70} />,
     },
-    {
-        id: 2,
-        skill: "Java",
-        icon: <Icon icon="devicon:java" width={70} height={70} />,
-    },
+
 ];
 const Skills = () => {
     const sectionRef = useRef<HTMLDivElement>(null);
